@@ -16,7 +16,7 @@
         body {
             font-family: 'Share Tech Mono', 'Courier New', monospace;
             background-color: #0a0a0a;
-            color: #00ff41;
+            color: #a855f7;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -51,20 +51,20 @@
         .header {
             text-align: center;
             padding: 20px 0;
-            border-bottom: 1px solid #00ff41;
+            border-bottom: 1px solid #a855f7;
             margin-bottom: 20px;
         }
 
         .header h1 {
             font-size: 2rem;
-            text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41, 0 0 30px #00ff41;
+            text-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 30px #a855f7;
             letter-spacing: 4px;
             animation: flicker 3s infinite;
         }
 
         .header .subtitle {
             font-size: 0.9rem;
-            color: #008f11;
+            color: #7e22ce;
             margin-top: 8px;
         }
 
@@ -81,18 +81,18 @@
         .terminal {
             flex: 1;
             background: rgba(0, 0, 0, 0.85);
-            border: 1px solid #00ff41;
+            border: 1px solid #a855f7;
             border-radius: 5px;
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3), inset 0 0 50px rgba(0, 255, 65, 0.05);
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.3), inset 0 0 50px rgba(168, 85, 247, 0.05);
         }
 
         .terminal-header {
             background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
             padding: 10px 15px;
-            border-bottom: 1px solid #00ff41;
+            border-bottom: 1px solid #a855f7;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -111,7 +111,7 @@
         .terminal-header .title {
             margin-left: 10px;
             font-size: 0.85rem;
-            color: #008f11;
+            color: #7e22ce;
         }
 
         /* Messages Area */
@@ -133,7 +133,7 @@
         }
 
         .messages::-webkit-scrollbar-thumb {
-            background: #00ff41;
+            background: #a855f7;
             border-radius: 4px;
         }
 
@@ -158,27 +158,27 @@
 
         .message.user {
             align-self: flex-end;
-            background: rgba(0, 255, 65, 0.15);
-            border: 1px solid #00ff41;
-            color: #00ff41;
+            background: rgba(168, 85, 247, 0.15);
+            border: 1px solid #a855f7;
+            color: #a855f7;
         }
 
         .message.user::before {
             content: '> USER: ';
-            color: #00ff41;
+            color: #a855f7;
             font-weight: bold;
         }
 
         .message.bot {
             align-self: flex-start;
-            background: rgba(0, 143, 17, 0.1);
-            border: 1px solid #008f11;
-            color: #00ff41;
+            background: rgba(126, 34, 206, 0.1);
+            border: 1px solid #7e22ce;
+            color: #a855f7;
         }
 
         .message.bot::before {
             content: '> SYSTEM: ';
-            color: #008f11;
+            color: #7e22ce;
             font-weight: bold;
         }
 
@@ -186,7 +186,7 @@
             align-self: center;
             background: transparent;
             border: none;
-            color: #008f11;
+            color: #7e22ce;
             font-size: 0.85rem;
             text-align: center;
         }
@@ -196,7 +196,7 @@
             display: none;
             align-self: flex-start;
             padding: 12px 16px;
-            color: #008f11;
+            color: #7e22ce;
         }
 
         .typing-indicator.active {
@@ -217,12 +217,12 @@
             display: flex;
             padding: 15px;
             background: rgba(0, 0, 0, 0.5);
-            border-top: 1px solid #00ff41;
+            border-top: 1px solid #a855f7;
             gap: 10px;
         }
 
         .input-area .prompt {
-            color: #00ff41;
+            color: #a855f7;
             font-size: 1.1rem;
             display: flex;
             align-items: center;
@@ -233,20 +233,20 @@
             background: transparent;
             border: none;
             outline: none;
-            color: #00ff41;
+            color: #a855f7;
             font-family: inherit;
             font-size: 1rem;
-            caret-color: #00ff41;
+            caret-color: #a855f7;
         }
 
         .input-area input::placeholder {
-            color: #006400;
+            color: #581c87;
         }
 
         .input-area button {
             background: transparent;
-            border: 1px solid #00ff41;
-            color: #00ff41;
+            border: 1px solid #a855f7;
+            color: #a855f7;
             padding: 8px 20px;
             font-family: inherit;
             font-size: 0.9rem;
@@ -257,20 +257,20 @@
         }
 
         .input-area button:hover {
-            background: #00ff41;
+            background: #a855f7;
             color: #0a0a0a;
-            box-shadow: 0 0 15px #00ff41;
+            box-shadow: 0 0 15px #a855f7;
         }
 
         /* Status Bar */
         .status-bar {
             padding: 8px 15px;
             background: #0d0d0d;
-            border-top: 1px solid #003300;
+            border-top: 1px solid #3b0764;
             display: flex;
             justify-content: space-between;
             font-size: 0.75rem;
-            color: #006400;
+            color: #581c87;
         }
 
         .status-bar .status {
@@ -283,7 +283,7 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #00ff41;
+            background: #a855f7;
             animation: pulse 2s infinite;
         }
 
@@ -316,7 +316,7 @@
             text-align: center;
             padding: 15px;
             font-size: 0.8rem;
-            color: #006400;
+            color: #581c87;
         }
     </style>
 </head>
@@ -387,7 +387,7 @@
         function drawMatrix() {
             ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = '#00ff41';
+            ctx.fillStyle = '#a855f7';
             ctx.font = fontSize + 'px monospace';
 
             for (let i = 0; i < drops.length; i++) {
